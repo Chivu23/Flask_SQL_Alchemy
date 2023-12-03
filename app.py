@@ -11,8 +11,8 @@ db = SQLAlchemy(app)
 
 
 class User(db.Model):
-    id = db.Column(db.Integer, primary_kek=True)
+    id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50))
     location = db.Column(db.String(50))
-    date_created = db.Comn(db.DateTime, default=datetime.now)
+    date_created = db.Column(db.DateTime, default=datetime.now)
 
